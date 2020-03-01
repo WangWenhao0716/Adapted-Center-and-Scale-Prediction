@@ -1,0 +1,9 @@
+```
+*DATA_PATH
+	*annotations
+		*anno_train.mat
+		*anno_val.mat
+	*images
+		*train
+		*val
+```
