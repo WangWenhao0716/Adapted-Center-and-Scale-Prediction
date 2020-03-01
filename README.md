@@ -7,3 +7,11 @@ ATTENTION: I will release my codes about the paper [**Adapted Center and Scale P
 
 ## NOTE
 Please do not run the codes until I finish uploading. The followings are constructing!
+
+## Requirement
+* Python 3.6
+* Pytorch 0.4.1.post2
+* Numpy 1.16.0
+* OpenCV 3.4.2
+* Torchvision 0.2.0
+
