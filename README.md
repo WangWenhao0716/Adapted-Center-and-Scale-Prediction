@@ -29,7 +29,24 @@ You can directly get the codes by:
 ## Preparation
 1. CityPersons Dataset
 
-You should download the dataset from [here](https://www.cityscapes-dataset.com/downloads/). From that link, leftImg8bit_trainvaltest.zip (11GB) is used.
+You should download the dataset from [here](https://www.cityscapes-dataset.com/downloads/). From that link, leftImg8bit_trainvaltest.zip (11GB) is used. We use the training set(2975 images) and the validation set(500 images) for test. The data should be stored in `./data/citypersons/images`. And the data structure will be 
+```
+*DATA_PATH
+	*images
+		*train
+			*aachen
+			*bochum
+			...
+		*val
+			*frankfurt
+			*lindau
+			*munster
+		*test
+			*berlin
+			*bielefeld
+			...
+```
+
 
 2. Pretrained Models
 
