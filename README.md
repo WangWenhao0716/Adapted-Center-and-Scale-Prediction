@@ -37,7 +37,7 @@ The backbone of our ACSP is modified ResNet-101, i.e. replacing all BN layers wi
 
 We provide two models:
 
-[ACSP(Smooth L1)](): Reasonable 10.0%; Heavy 46.1%; Partial 8.8%; Bare 6.7%.
+[ACSP(Smooth L1)](): Reasonable $10.0$%; Heavy 46.1%; Partial 8.8%; Bare 6.7%.
 
 [ACSP(Vanilla L1)](): Reasonable 9.3%; Heavy 46.3%; Partial 8.7%; Bare 5.6%.
 
