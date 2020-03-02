@@ -29,7 +29,7 @@ You can directly get the codes by:
 ## Preparation
 1. CityPersons Dataset
 
-You should download the dataset from [here](https://www.cityscapes-dataset.com/downloads/). From that link, leftImg8bit_trainvaltest.zip (11GB) is used. We use the training set(2975 images) for training and the validation set(500 images) for test. The data should be stored in `./data/citypersons/images`. Annotations have already prepared for you. And the data structure will be 
+You should download the dataset from [here](https://www.cityscapes-dataset.com/downloads/). From that link, leftImg8bit_trainvaltest.zip (11GB) is used. We use the training set(2975 images) for training and the validation set(500 images) for test. The data should be stored in `./data/citypersons/images`. Annotations have already prepared for you. And the directory structure will be 
 ```
 *DATA_PATH
 	*images
@@ -60,9 +60,9 @@ The backbone of our ACSP is modified ResNet-101, i.e. replacing all BN layers wi
 
 We provide two models:
 
-[ACSP(Smooth L1)](): **Reasonable 10.0%; Heavy 46.1%; Partial 8.8%; Bare 6.7%**.
+[ACSP(Smooth L1)](https://pan.baidu.com/s/1p2IF7nI6dOhpmSvXLFsxlA)(ydc1): **Reasonable 10.0%; Heavy 46.1%; Partial 8.8%; Bare 6.7%**.
 
-[ACSP(Vanilla L1)](): **Reasonable 9.3%; Heavy 46.3%; Partial 8.7%; Bare 5.6%**.
+[ACSP(Vanilla L1)](https://pan.baidu.com/s/1zZP3brc1FvMrcmPo7Fx-Tg)(4oa2): **Reasonable 9.3%; Heavy 46.3%; Partial 8.7%; Bare 5.6%**.
 
 They should be stored in `./models`.
 
