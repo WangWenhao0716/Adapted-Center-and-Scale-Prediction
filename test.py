@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader
 from torchvision.transforms import ToTensor, Normalize, Compose, ColorJitter
 
 from net.loss import *
-from net.network_sn_101 import CSPNet
+from net.network_sn_101 import ACSPNet
 from config import Config
 from dataloader.loader import *
 from util.functions import parse_det_offset
@@ -35,7 +35,7 @@ testloader = DataLoader(testdataset, batch_size=1)
 
 # net
 print('Net...')
-net = CSPNet().cuda()
+net = ACSPNet().cuda()
 
 
 # position
