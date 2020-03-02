@@ -66,6 +66,13 @@ We provide two models:
 
 They should be stored in `./models`.
 
+4. Compile Libraries
+```
+cd util
+make all
+```
+
+
 ## Training
 
 `python train.py`
