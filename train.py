@@ -10,7 +10,7 @@ from torch.utils.data import DataLoader
 from torchvision.transforms import ToTensor, Normalize, Compose, ColorJitter
 
 from net.loss import *
-from net.network_sn_101 import CSPNet
+from net.network_sn_101 import ACSPNet
 from config import Config
 from dataloader.loader import *
 from sys import exit
@@ -40,7 +40,7 @@ trainloader = DataLoader(traindataset, batch_size=config.onegpu*len(config.gpu_i
 
 # net
 print('Net...')
-net = CSPNet().cuda()
+net = ACSPNet().cuda()
 
 # To continue training
 #net.load_state_dict(torch.load('./ckpt/ACSP_150.pth.tea'))
