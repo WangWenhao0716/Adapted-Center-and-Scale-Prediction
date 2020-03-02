@@ -1,6 +1,6 @@
-The codes are about my paper [**Adapted Center and Scale Prediction: More stable and More Accurate**](<https://arxiv.org/abs/2002.09053>). This is the official pytorch implementation. However, because my paper is based on [**High-level Semantic Feature Detection: A New Perspective for Pedestrian Detection**](<https://arxiv.org/abs/1904.02948>) and this is my first try to begin a computer vision project, I choose to use and change the codes from [**CSP PyTorch Implementation**](<https://github.com/lw396285v/CSP-pedestrian-detection-in-pytorch>). Many thanks for his contribution！
+The codes are about my paper [**Adapted Center and Scale Prediction: More stable and More Accurate**](<https://arxiv.org/abs/2002.09053>). This is the pytorch implementation. However, because my paper is based on [**High-level Semantic Feature Detection: A New Perspective for Pedestrian Detection**](<https://arxiv.org/abs/1904.02948>) and this is my first try to begin a computer vision project, I choose to use and change the codes from [**CSP PyTorch Implementation**](<https://github.com/lw396285v/CSP-pedestrian-detection-in-pytorch>). Many thanks for his contribution！
 
-#Welcome to my [**personal website**](<https://wenhaowang.org>)
+Welcome to [**my website**](<https://wenhaowang.org>)
 
 # ACSP PyTorch Implementation
 ![image](https://github.com/WangWenhao0716/pictures/blob/master/SOTA.png)
