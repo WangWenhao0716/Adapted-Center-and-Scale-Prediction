@@ -12,12 +12,12 @@ from net.loss import *
 from net.network_sn_101 import CSPNet
 from config import Config
 from dataloader.loader import *
-from util.functions_test import parse_det_offset
+from util.functions import parse_det_offset
 from eval_city.eval_script.eval_demo import validate
 from sys import exit
 from net.resnet import *
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "6"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 config = Config()
 config.train_path = './data/citypersons'
@@ -50,7 +50,7 @@ offset = offset_pos().cuda()
 teacher_dict = net.state_dict()
 
 
-def val(name, log=None):
+def val(r, name, log=None):
     
     net.eval()
     #load the model here!!!
@@ -66,7 +66,7 @@ def val(name, log=None):
         with torch.no_grad():
             pos, height, offset = net(inputs)
 
-        boxes = parse_det_offset(pos.cpu().numpy(), height.cpu().numpy(), offset.cpu().numpy(), config.size_test, score=0.1, down=4, nms_thresh=0.5)
+        boxes = parse_det_offset(r, pos.cpu().numpy(), height.cpu().numpy(), offset.cpu().numpy(), config.size_test, score=0.1, down=4, nms_thresh=0.5)
         if len(boxes) > 0:
             boxes[:, [2, 3]] -= boxes[:, [0, 1]]
 
@@ -97,6 +97,9 @@ def val(name, log=None):
 
 
 
-for i in range(11,100):
-    name = './ckpt_sn_2x2_keep_101_l1_1/'+ 'CSPNet-'+str(i)+'.pth.tea'
-    val(name)
+name_1 = './models/ACSP(Smooth L1).pth.tea'
+name_2 = './models/ACSP(Vanilla L1).pth.tea'
+
+
+val(0.40, name_1)
+val(0.36, name_2)
