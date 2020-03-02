@@ -6,9 +6,6 @@ Welcome to [**my website**](<https://wenhaowang.org>)
 ![image](https://github.com/WangWenhao0716/pictures/blob/master/SOTA.png)
 ![image](https://github.com/WangWenhao0716/pictures/blob/master/4.png)
 
-## NOTE
-Please do not run the codes until I finish uploading. The followings are constructing!
-
 ## Requirement
 * Python 3.6
 * Pytorch 0.4.1.post2
@@ -17,7 +14,7 @@ Please do not run the codes until I finish uploading. The followings are constru
 * Torchvision 0.2.0
 
 ## Reproduction Environment
-* Test our models: One GPU with about/over 4G memory.
+* Test our models: One GPU with about 4G memory.
 * Train new models: Two GPUs with 32G memory per GPU.
 
 ## Installation
@@ -54,15 +51,15 @@ You should download the dataset from [here](https://www.cityscapes-dataset.com/d
 
 2. Pretrained Models
 
-The backbone of our ACSP is modified ResNet-101, i.e. replacing all BN layers with SN layers. You can download from [here](https://pan.baidu.com/s/1rK-ukAjEIPql2ECi38hRbQ). It is provided by the author of [Switchable Normalization](https://github.com/switchablenorms/Switchable-Normalization). The weight is stored in `./models/`.
+The backbone of our ACSP is modified ResNet-101, i.e. replacing all BN layers with SN layers. You can download the pretrained model from [here](https://pan.baidu.com/s/1rK-ukAjEIPql2ECi38hRbQ). It is provided by the author of [Switchable Normalization](https://github.com/switchablenorms/Switchable-Normalization). The weights will be stored in `./models/`.
 
 3. Our Trained Models
 
 We provide two models:
 
-[ACSP(Smooth L1)](https://pan.baidu.com/s/1p2IF7nI6dOhpmSvXLFsxlA)(ydc1): **Reasonable 10.0%; Heavy 46.1%; Partial 8.8%; Bare 6.7%**.
+[ACSP(Smooth L1)](https://pan.baidu.com/s/1p2IF7nI6dOhpmSvXLFsxlA)(code: ydc1): **Reasonable 10.0%; Heavy 46.1%; Partial 8.8%; Bare 6.7%**.
 
-[ACSP(Vanilla L1)](https://pan.baidu.com/s/1zZP3brc1FvMrcmPo7Fx-Tg)(4oa2): **Reasonable 9.3%; Heavy 46.3%; Partial 8.7%; Bare 5.6%**.
+[ACSP(Vanilla L1)](https://pan.baidu.com/s/1zZP3brc1FvMrcmPo7Fx-Tg)(code: 4oa2): **Reasonable 9.3%; Heavy 46.3%; Partial 8.7%; Bare 5.6%**.
 
 They should be stored in `./models/`.
 
