@@ -54,7 +54,7 @@ You should download the dataset from [here](https://www.cityscapes-dataset.com/d
 
 2. Pretrained Models
 
-The backbone of our ACSP is modified ResNet-101, i.e. replacing all BN layers with SN layers. You can download from [here](https://pan.baidu.com/s/1rK-ukAjEIPql2ECi38hRbQ). It is provided by the author of [Switchable Normalization](https://github.com/switchablenorms/Switchable-Normalization). The weight is stored in `./models`.
+The backbone of our ACSP is modified ResNet-101, i.e. replacing all BN layers with SN layers. You can download from [here](https://pan.baidu.com/s/1rK-ukAjEIPql2ECi38hRbQ). It is provided by the author of [Switchable Normalization](https://github.com/switchablenorms/Switchable-Normalization). The weight is stored in `./models/`.
 
 3. Our Trained Models
 
@@ -64,7 +64,7 @@ We provide two models:
 
 [ACSP(Vanilla L1)](https://pan.baidu.com/s/1zZP3brc1FvMrcmPo7Fx-Tg)(4oa2): **Reasonable 9.3%; Heavy 46.3%; Partial 8.7%; Bare 5.6%**.
 
-They should be stored in `./models`.
+They should be stored in `./models/`.
 
 4. Compile Libraries
 ```
