@@ -16,7 +16,7 @@ Please do not run the codes until I finish uploading. The followings are constru
 * OpenCV 3.4.2
 * Torchvision 0.2.0
 
-## Reproduce
+## Reproduction 
 * Test our models: One GPU with about/over 4G memory.
 * Train new models: Two GPUs with 32G memory per GPU.
 
@@ -25,6 +25,16 @@ You can directly get the codes by:
 ```
   git clone https://github.com/WangWenhao0716/Adapted-Center-and-Scale-Prediction.git
 ```
+
+## Preparation
+1. CityPersons Dataset
+
+2. Pretrained Models
+
+3. Our Trained Models
+
+
+
 
 ## Citation
 If you think our work is useful in your research, please consider citing:
