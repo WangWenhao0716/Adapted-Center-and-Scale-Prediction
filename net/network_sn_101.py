@@ -6,9 +6,9 @@ from net.l2norm import L2Norm
 from net.devkit.ops import SwitchNorm2d
 
 
-class CSPNet(nn.Module):
+class ACSPNet(nn.Module):
     def __init__(self):
-        super(CSPNet, self).__init__()
+        super(ACSPNet, self).__init__()
 
         resnet = resnetv2sn101(pretrained = True)
 
