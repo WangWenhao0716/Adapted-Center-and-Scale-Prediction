@@ -19,3 +19,14 @@ Please do not run the codes until I finish uploading. The followings are constru
 ## Reproduce
 * Test our models: One GPU with about/over 4G memory.
 * Train new models: Two GPUs with 32G memory per GPU.
+
+## Citation
+If you think our work is useful in your research, please consider citing:
+```
+@article{wang2020adapted,
+  title={Adapted Center and Scale Prediction: More Stable and More Accurate},
+  author={Wang, Wenhao},
+  journal={arXiv preprint arXiv:2002.09053},
+  year={2020}
+}
+```
