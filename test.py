@@ -20,12 +20,9 @@ from net.resnet import *
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 config = Config()
-config.train_path = './data/citypersons'
 config.test_path = './data/citypersons'
-config.size_train = (640, 1280)
 config.size_test = (1280, 2560)
 config.init_lr = 2e-4
-config.num_epochs = 150
 config.offset = True
 config.val = True
 config.val_frequency = 1
@@ -99,7 +96,9 @@ def val(r, name, log=None):
 
 name_1 = './models/ACSP(Smooth L1).pth.tea'
 name_2 = './models/ACSP(Vanilla L1).pth.tea'
-
+#or Val your own model
+#name = './ckpt/ACSP_XXX.pth.tea'
+#val(0.36, name)
 
 val(0.40, name_1)
 val(0.36, name_2)
