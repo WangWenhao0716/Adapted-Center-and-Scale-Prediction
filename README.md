@@ -29,6 +29,8 @@ You can directly get the codes by:
 ## Preparation
 1. CityPersons Dataset
 
+You should download the dataset from [here](https://www.cityscapes-dataset.com/downloads/). From that link, leftImg8bit_trainvaltest.zip (11GB) is used.
+
 2. Pretrained Models
 
 The backbone of our ACSP is modified ResNet-101, i.e. replacing all BN layers with SN layers. You can download from [here](https://pan.baidu.com/s/1rK-ukAjEIPql2ECi38hRbQ). It is provided by the author of [Switchable Normalization](https://github.com/switchablenorms/Switchable-Normalization). The weight is stored in `./models`.
@@ -37,7 +39,7 @@ The backbone of our ACSP is modified ResNet-101, i.e. replacing all BN layers wi
 
 We provide two models:
 
-[ACSP(Smooth L1)](): Reasonable $10.0$%; Heavy 46.1%; Partial 8.8%; Bare 6.7%.
+[ACSP(Smooth L1)](): Reasonable 10.0%; Heavy 46.1%; Partial 8.8%; Bare 6.7%.
 
 [ACSP(Vanilla L1)](): Reasonable 9.3%; Heavy 46.3%; Partial 8.7%; Bare 5.6%.
 
