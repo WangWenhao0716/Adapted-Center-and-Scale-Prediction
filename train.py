@@ -85,8 +85,6 @@ def train():
     print('Training start')
     if not os.path.exists('./ckpt'):
         os.mkdir('./ckpt')
-    if not os.path.exists('./mr'):
-        os.mkdir('./mr')
     if not os.path.exists('./loss'):
         os.mkdir('./loss')
     if not os.path.exists('./log'):
@@ -99,11 +97,8 @@ def train():
     best_loss = np.Inf
     best_loss_epoch = 0
 
-    best_mr = 100
-    best_mr_epoch = 0
     
     loss_list = []
-    mr_list = []
 
     for epoch in range(0,150):
         print('----------')
