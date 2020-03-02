@@ -191,7 +191,7 @@ def resnetv2sn101(pretrained = True, **kwargs):
     """
     model = ResNetV2SN(Bottleneck, [3, 4, 23, 3], **kwargs)
     if pretrained:
-        checkpoint = torch.load('./net/pretrained/ResNet101v2+SN(8,32).pth')
+        checkpoint = torch.load('./models/ResNet101v2+SN(8,32).pth')
         wrong = list(checkpoint['state_dict'].keys())
         right = []
         for i in range(len(wrong)):
