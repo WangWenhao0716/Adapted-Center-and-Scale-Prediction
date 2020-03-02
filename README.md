@@ -64,6 +64,7 @@ We provide two models:
 They should be stored in `./models/`.
 
 4. Compile Libraries
+Before running the codes, you must compile the libraries. The followings should be accomplished in terminal. If you are not sure about what it means, click [here](https://linuxize.com/post/linux-cd-command/) may be helpful.
 ```
 cd util
 make all
