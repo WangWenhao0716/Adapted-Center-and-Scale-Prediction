@@ -64,7 +64,9 @@ We provide two models:
 They should be stored in `./models/`.
 
 4. Compile Libraries
+
 Before running the codes, you must compile the libraries. The followings should be accomplished in terminal. If you are not sure about what it means, click [here](https://linuxize.com/post/linux-cd-command/) may be helpful.
+
 ```
 cd util
 make all
@@ -74,6 +76,10 @@ make all
 ## Training
 
 `python train.py`
+
+or
+
+`CUDA_VISIBLE_DEVICES=x,x python train.py --gpu_id 0 1`
 
 ## Test
 
@@ -90,3 +96,7 @@ If you think our work is useful in your research, please consider citing:
   year={2020}
 }
 ```
+
+## Note
+
+This is my first computer vision project. If you have any questions or there are something wrong in my codes, feel free to contact me: wangwenhao@buaa.edu.cn.
