@@ -43,7 +43,7 @@ print('Net...')
 net = CSPNet().cuda()
 
 # To continue training
-#net.load_state_dict(torch.load('./ckpt/CSPNet-150.pth.tea'))
+#net.load_state_dict(torch.load('./ckpt/ACSP_150.pth.tea'))
 
 
 # position
@@ -174,7 +174,7 @@ def train():
         log.write('%d %.7f\n' % (epoch+1, epoch_loss))
             
         print('Save checkpoint...')
-        filename = './ckpt/%s-%d.pth' % (net.module.__class__.__name__,epoch+1)
+        filename = './ckpt/%s_%d.pth' % ('ACSP',epoch+1)
 
         torch.save(net.module.state_dict(), filename)
         if config.teacher:
