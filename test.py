@@ -15,7 +15,6 @@ from dataloader.loader import *
 from util.functions import parse_det_offset
 from eval_city.eval_script.eval_demo import validate
 from sys import exit
-from net.resnet import *
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
