@@ -15,7 +15,7 @@ Welcome to [**my website**](<https://wenhaowang.org>)
 
 ## Reproduction Environment
 * Test our models: One GPU with about 4G memory.
-* Train new models: Two GPUs with 32G memory per GPU.(If you do not have enough GPU memory resources, please resize the input to 640x1280, it yields slightly bad performance, though.)
+* Train new models: Two GPUs with 32G memory per GPU.(If you do not have enough GPU memory resources, please resize the input to 640x1280, it yields slightly worse performance, though.)
 
 ## Installation
 You can directly get the codes by:
