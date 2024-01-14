@@ -3,8 +3,6 @@ The codes are about my paper [**Adapted Center and Scale Prediction: More stable
 Welcome to [**my website**](<https://wangwenhao0716.github.io/>)
 
 # ACSP PyTorch Implementation
-![image](https://github.com/WangWenhao0716/pictures/blob/master/SOTA.png)
-![image](https://github.com/WangWenhao0716/pictures/blob/master/4.png)
 
 ## Requirement
 * Python 3.6
@@ -96,7 +94,17 @@ If you think our work is useful in your research, please consider citing:
   year={2020}
 }
 ```
-
+```
+@article{wang2020detection,
+  title={Detection of panoramic vision pedestrian based on deep learning},
+  author={Wang, Wenhao},
+  journal={Image and Vision Computing},
+  volume={103},
+  pages={103986},
+  year={2020},
+  publisher={Elsevier}
+}
+```
 ## Note
 
 This is my first computer vision project. If you have any questions or there are something wrong in my codes, feel free to contact me: wangwenhao@buaa.edu.cn.
